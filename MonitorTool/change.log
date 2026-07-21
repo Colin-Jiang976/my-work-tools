@@ -1,0 +1,9 @@
+```markdown
+## [2.0.0] - 2026-07-15
+
+### Added
+- Modular architecture: Split monolithic script into core modules (`ConfigLoader.ps1`, `OpenTodayLogs.ps1`).
+- External configuration: Moved all hardcoded IPs and folder rules to `config.json`.
+
+### Changed
+- Refactored `Start-Tool.ps1` as an immutable main entry point that dynamically loads modules.
