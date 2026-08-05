@@ -7,3 +7,11 @@
 
 ### Changed
 - Refactored `Start-Tool.ps1` as an immutable main entry point that dynamically loads modules.
+
+## v2.1.0
+
+### Added
+- Added `OpenMorningPages` module.
+- Automatically opens configured morning pages before the work shift starts.
+- Supports multiple URLs through the `MorningPages` configuration.
+- Skips execution after the configured shift start time.

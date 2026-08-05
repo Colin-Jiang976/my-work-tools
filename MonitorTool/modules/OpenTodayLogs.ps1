@@ -29,7 +29,7 @@
 
             # Check if this folder matches any exception configured in config.json[cite: 2]
             $IsException = $false
-            foreach ($ExFolder in $Config.OffseFolders) {
+            foreach ($ExFolder in $Config.OffsetFolders) {
                 if ($FolderName -like "*$ExFolder") {
                     $IsException = $true
                     break

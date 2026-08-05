@@ -16,5 +16,21 @@
     "ShareFolder1": 3,
     "ShareFolder2": 3,
     "ShareFolder3": 2
-  }
+  },
+  
+  "MorningPages": [
+    {
+      "Name": "page1",
+      "Url": "http://192.168.1.100/..."
+    },
+    {
+      "Name": "page2",
+      "Url": "http://192.168.1.100/..."
+    },
+    {
+      "Name": "page3",
+      "Url": "http://192.168.1.100/..."
+    }
+  ]
+
 }
