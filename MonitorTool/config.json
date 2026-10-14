@@ -17,19 +17,22 @@
     "ShareFolder2": 3,
     "ShareFolder3": 2
   },
-  
+
   "MorningPages": [
     {
       "Name": "page1",
-      "Url": "http://192.168.1.100/..."
+      "Url": "http://192.168.1.100/...",
+      "AccountKey": "page1_account"
     },
     {
       "Name": "page2",
-      "Url": "http://192.168.1.100/..."
+      "Url": "http://192.168.1.100/...",
+      "AccountKey": "page2_account"
     },
     {
       "Name": "page3",
-      "Url": "http://192.168.1.100/..."
+      "Url": "http://192.168.1.100/...",
+      "AccountKey": "page3_account"
     }
   ]
 

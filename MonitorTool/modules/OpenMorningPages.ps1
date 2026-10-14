@@ -1,5 +1,12 @@
+# modules/OpenMorningPages.ps1
+# Opens the pages for the current shift, then shows the password book
+# with only the accounts needed for those pages.
+
 function Invoke-OpenMorningPages {
-    param ([object]$Config)
+    param (
+        [object]$Config,
+        [string]$SecretsFolder
+    )
 
     # Morning only
     $CurrentHour = (Get-Date).Hour
@@ -19,7 +26,7 @@ function Invoke-OpenMorningPages {
     Write-Host "[Morning Pages] Opening..." -ForegroundColor Cyan
 
     foreach ($Page in $Config.MorningPages) {
-        if (:IsNullOrWhiteSpace($Page.Url)) {
+        if ([string]::IsNullOrWhiteSpace($Page.Url)) {
             Write-Warning "Empty URL: $($Page.Name)"
             continue
         }
@@ -31,5 +38,13 @@ function Invoke-OpenMorningPages {
         catch {
             Write-Warning "Failed to open: $($Page.Name)"
         }
+    }
+
+    # Show only the accounts needed for today's pages
+    if (Get-Command Invoke-PasswordBook -ErrorAction SilentlyContinue) {
+        Invoke-PasswordBook -Config $Config -Pages $Config.MorningPages -SecretsFolder $SecretsFolder
+    }
+    else {
+        Write-Warning "PasswordBook module not loaded; skipping."
     }
 }
