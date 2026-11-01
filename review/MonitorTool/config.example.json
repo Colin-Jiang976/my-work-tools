@@ -1,0 +1,37 @@
+{
+  "ServerIP": "<YOUR_SERVER_IP>",
+  "ShiftSplitHour": 13,
+  "OffsetFolders": [
+    "ShareFolderX",
+    "ShareFolderY"
+  ],
+  "MorningShift": {
+    "ShareFolder1": 2,
+    "ShareFolder2": 3,
+    "ShareFolder3": 3,
+    "ShareFolder4": 3,
+    "ShareFolder5": 2
+  },
+  "EveningShift": {
+    "ShareFolder1": 3,
+    "ShareFolder2": 3,
+    "ShareFolder3": 2
+  },
+  "MorningPages": [
+    {
+      "Name": "page1",
+      "Url": "https://monitoring.example.invalid/page1",
+      "AccountKey": "page1_account"
+    },
+    {
+      "Name": "page2",
+      "Url": "https://monitoring.example.invalid/page2",
+      "AccountKey": "page2_account"
+    },
+    {
+      "Name": "page3",
+      "Url": "https://monitoring.example.invalid/page3",
+      "AccountKey": "page3_account"
+    }
+  ]
+}

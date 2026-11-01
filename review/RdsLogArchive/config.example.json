@@ -1,0 +1,9 @@
+{
+  "InputDirectory": "./input",
+  "ArchiveRoot": "./archive",
+  "Files": ["query-a.log", "query-b.log", "query-a (1).log", "query-b (1).log"],
+  "GroupNames": ["Group1", "Group2"],
+  "Encoding": "UTF8",
+  "Keywords": ["err", "ORA"],
+  "BackupRoot": null
+}

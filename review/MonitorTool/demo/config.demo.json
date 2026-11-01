@@ -1,0 +1,16 @@
+{
+  "ServerIP": "<YOUR_SERVER_IP>",
+  "ShiftSplitHour": 13,
+  "OffsetFolders": [
+    "ShareFolderX"
+  ],
+  "MorningShift": {
+    "ShareFolder1": 2,
+    "ShareFolderX": 3
+  },
+  "EveningShift": {
+    "ShareFolder1": 3,
+    "ShareFolderX": 1
+  },
+  "MorningPages": []
+}

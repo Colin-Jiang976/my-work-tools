@@ -1,0 +1,6 @@
+config.json
+input/
+archive/
+demo-runs/
+test-runs/
+*.log

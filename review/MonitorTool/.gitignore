@@ -1,0 +1,5 @@
+secrets/
+*.cred
+config.json
+demo/logs/
+shortcut/
